@@ -14,18 +14,23 @@
     <HelloWorld :msg="안녕하세요"></HelloWorld>
     <HelloWorld :msg="안녕하세요"></HelloWorld>
     <HelloWorld :msg="안녕하세요"></HelloWorld>
+    <Event :pageH1="eventH1"></Event>
+    <Event :pageH1="'이건H2'"></Event>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import HelloWorld from "@/components/HelloWorld.vue";
+import Event from "@/views/Event.vue";
 
 export default {
   name: "Home",
-  components: { HelloWorld },
+  components: { HelloWorld, Event },
   data() {
     return {
+      eventH1: "이건 EventH1",
+
       message: "안녕하세요! Vue.js!",
       seen: true,
       todos: [
