@@ -5,21 +5,30 @@
     <div v-html="msg"></div>
     <!-- v- 자바스크립트 끌어오는 용어 -->
     <div v-bind:title="title">타이틀</div>
-    <div>{{ title.split('').reverse().join('') }}</div>
+    <div>
+      {{
+        title
+          .split("")
+          .reverse()
+          .join("")
+      }}
+    </div>
     <!-- div @bind="doSomething" -->
     <!--  v- (디렉티브라고 부름) title이 타이틀 문자 밑에 뜨는걸 나타냄.-->
     <div>{{ reverseTitle }}</div>
     <div>{{ reverse() }}</div>
     <!-- <div :class="{ active: isActive }" class="text-danger">클래스 바인딩</div> true/false 삼항 연산자 (제일 많이 사용)-->
     <!-- <div :class="['active', 'text-danger']">클래스 바인딩(제일 많이 사용)</div> -->
-    <div :class="[isActive ? 'active':'', 'text-danger']">클래스 바인딩</div>
+    <div :class="[isActive ? 'active' : '', 'text-danger']">클래스 바인딩</div>
     <!--삼항 연산자 ":" -->
     <!-- 삼항 조건 연산자 true : false  -->
     <!-- <div :class="{ active(class이름): isActive }"></div> -->
     <div v-bind:class="{ active: !isActive }">클래스 바인딩 반전</div>
     <!-- 클래스 바인딩 -->
     <!-- <div :style="{color : 'blue', fontSize: size + 'px'}">인라인 스타일 바인딩</div> -->
-    <div :style="{color : 'blue', fontSize: size + 'px'}">인라인 스타일 바인딩</div>
+    <div :style="{ color: 'blue', fontSize: size + 'px' }">
+      인라인 스타일 바인딩
+    </div>
     <div :style="fontStyle">인라인 스타일 바인딩</div>
     <!-- font-size하면 에러가 나서 fontSize로 사용함 or 'font-size' 이렇게 문자열로 사용-->
   </div>
@@ -95,6 +104,6 @@ export default {
 </style>
 
 //computed(선언형/반응형 getter) 와 watch(명령형)의 다른점 -> 반응형에서 사용.
-// class 이름은 kebab-case (무조건 소문자 띄어쓰기 "-"하이픈으로 대체
-// 변수명은 cameCase처럼 소+대문자 
-// 파일명은 class?,vue파일-PascalCase ex)PlayGround.vue / js파일은 파일명을 snake_case 소문자로 작성
+// class 이름은 kebab-case (무조건 소문자 띄어쓰기 "-"하이픈으로 대체 //
+변수명은 cameCase처럼 소+대문자 // 파일명은 class?,vue파일-PascalCase
+ex)PlayGround.vue / js파일은 파일명을 snake_case 소문자로 작성

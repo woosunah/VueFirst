@@ -9,13 +9,14 @@
     <!-- forEach / forIn반복문(KEY값을 가져옴) / forOf반복문(값을 가져옴) 기존for문보다 더 자주사용-->
     <!-- 자바스크립트는 forOf기반 -->
     <ul id="v-for-object" class="demo">
-      <li v-for="(value, name) in object" :key="name">{{ value }} : {{ name }}</li>
+      <li v-for="(value, name) in object" :key="name">
+        {{ value }} : {{ name }}
+      </li>
     </ul>
-    <li v-for="(n,i) in evenNumbers" :key="i">{{ n }}</li>
+    <li v-for="(n, i) in evenNumbers" :key="i">{{ n }}</li>
     <span v-for="n in 10" :key="n">{{ n }}</span>
   </div>
 </template>
-
 
 <script>
 // @ is an alias to /src
@@ -50,4 +51,3 @@ export default {
 .list {
 }
 </style>
-
