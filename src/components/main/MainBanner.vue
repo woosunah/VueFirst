@@ -2,7 +2,11 @@
   <div class="main-banner">
     <!-- <img :src="require('../../assets/banners/banners.jpg')" alt="images" /> -->
     <!-- v-img를 해야 반응형으로 작동함 / 그냥 imv :src하면 반응형으로 작동안됨 -->
-    <v-img :src="require('../../assets/banners/banners.jpg')" alt="images" min-height="485"></v-img>
+    <v-img
+      :src="require('../../assets/banners/banners.jpg')"
+      alt="images"
+      min-height="485"
+    ></v-img>
     <div class="main-copy">
       WELCOME TO
       <br />
@@ -41,10 +45,12 @@ export default {
   align-content: center;
   color: white;
   position: absolute;
-  font-size: 48px;
+  font-size: 45px;
+  font-weight: 100;
 }
 .main-copy span {
   font-size: 100px;
   font-weight: bold;
+  line-height: 1em;
 }
 </style>

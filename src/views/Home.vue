@@ -20,6 +20,7 @@ export default {
     CoreFooter: () => import("@/components/core/Footer.vue")
     // 필요한 타이밍에만 불러오는 방법 : 비동기적 / 비동기적으로 불러오는 방법 /
     // 비동기적 방법으로 많이사용
+    // C(대문자 필수적으로 사용) Core+F(대문자)ooter
   },
 
   data() {

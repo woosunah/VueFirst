@@ -9,7 +9,6 @@
     <button v-on:click.ctrl="say('what')">Say what</button>
   </div>
 </template>
-
 // e.preventDefault = v-on:click.stop같은 개념?
 <script>
 // @ is an alias to /src
