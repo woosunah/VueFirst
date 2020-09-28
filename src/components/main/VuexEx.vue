@@ -14,24 +14,24 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
+import { mapState } from 'vuex';
 export default {
-  name: "VueEx",
+  name: 'VueEx',
   components: {},
   data() {
     return {};
   },
-  computed: { ...mapState(["files"]) },
+  computed: { ...mapState(['files']) },
   methods: {
     addFile() {
-      this.$store.commit("addFile", {
-        title: "shiba",
+      this.$store.commit('addFile', {
+        title: 'shiba',
         url:
-          "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20120605_100%2Fwlsudfjqm1_1338899021027DEBJM_JPEG%2F2012-06-05_21%253B20%253B35.jpg&type=sc960_832",
-        subtitle: "shiba입니다."
+          'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20120605_100%2Fwlsudfjqm1_1338899021027DEBJM_JPEG%2F2012-06-05_21%253B20%253B35.jpg&type=sc960_832',
+        subtitle: 'shiba입니다.',
       });
-    }
-  }
+    },
+  },
 };
 </script>
 

@@ -1,12 +1,12 @@
 <!--<template>
-   <div class="blog-view">
+  <div class="blog-view">
     <div class="box">
       <h2>{{ "blog".toUpperCase() }}</h2>
       <div class="divider"></div>
-       v-row justify="center"
+      v-row justify="center"
       v-col cols="12" sm(작은)="3" md="4" v-for="(blog,i) in blogs" :key="i"  
-       위의 주석처리 된 부분이 vuetify grid시스템 적용
-       <div class="wrapper"> 
+      위의 주석처리 된 부분이 vuetify grid시스템 적용
+      <div class="wrapper"> 
         v-for="(blog(아무이름),i) in blogs(data,return->"blogs"이름이랑 같아야함 
         <blog-item
           v-for="(blog, i) in blogs"
@@ -19,11 +19,9 @@
           데이터 전달하는 방법 -> "통신" :title=""이런거
         </blog-item> 
       </div> 
-      
-     </div> 
-    
+    </div> 
   </div>
- </template>
+</template>
 
 <script>
 // @ is an alias to /src
@@ -100,13 +98,13 @@ export default {
 
 <template>
   <div class="blog-view">
-    <h2>{{ "Blog".toUpperCase() }}</h2>
+    <h2>{{ 'Blog'.toUpperCase() }}</h2>
     <div class="divider"></div>
     <v-row justify="center">
       <v-col cols="12" sm="3" md="4" v-for="(blog, i) in blogs" :key="i"
         ><blog-item
           :title="blog.title"
-          :imgUrl="blog.url"
+          :imgUrl="blog.img"
           :text="blog.text"
           class="blog-item"
         ></blog-item
@@ -117,25 +115,25 @@ export default {
 </template>
 
 <script>
-import { mapState } from "vuex";
+import { mapState } from 'vuex';
 export default {
-  name: "Blog",
-  components: { BlogItem: () => import("@/components/main/BlogItem.vue") },
+  name: 'Blog',
+  components: { BlogItem: () => import('@/components/main/BlogItem.vue') },
   data() {
     return {};
   },
-  computed: { ...mapState(["blogs"]) },
+  computed: { ...mapState(['blogs']) },
   methods: {
     addblogItem() {
       //click
-      this.$store.commit("addBlog", {
-        title: "shiba",
+      this.$store.commit('addBlog', {
+        title: 'shiba',
         url:
-          "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20120605_100%2Fwlsudfjqm1_1338899021027DEBJM_JPEG%2F2012-06-05_21%253B20%253B35.jpg&type=sc960_832",
-        text: "shiba입니다."
+          'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20120605_100%2Fwlsudfjqm1_1338899021027DEBJM_JPEG%2F2012-06-05_21%253B20%253B35.jpg&type=sc960_832',
+        text: 'shiba입니다.',
       });
-    }
-  }
+    },
+  },
 };
 </script>
 
