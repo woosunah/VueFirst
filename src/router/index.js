@@ -20,10 +20,16 @@ const routes = [
     component: Home,
     // 해당path의 component를 열기
     children: [{
-      path: '/',
-      name: 'main',
-      component: () => import('../views/main/Main.vue')
-    }]
+        path: '/',
+        name: 'main',
+        component: () => import('../views/main/Main.vue'),
+      },
+      {
+        path: '/gallery',
+        component: () =>
+          import('../views/Gallery.vue'),
+      },
+    ],
   },
   // {
   //   path: "/play",

@@ -293,6 +293,7 @@ export default {
         );
       });
     },
+
     requestSendEmail() {
       let body = {
         personalizations: [
