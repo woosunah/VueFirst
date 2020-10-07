@@ -29,6 +29,11 @@ const routes = [
         component: () =>
           import('../views/Gallery.vue'),
       },
+      {
+        path: '/gallery2',
+        component: () =>
+          import('../views/Gallery2.vue'),
+      },
     ],
   },
   // {

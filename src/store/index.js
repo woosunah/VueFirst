@@ -201,7 +201,10 @@ export default new Vuex.Store({
         }
       ],
       "message": "Successfully! All records has been fetched."
-    }
+    },
+    images: [
+
+    ]
   },
   mutations: {
     addBlog(state, payload) {
@@ -210,7 +213,11 @@ export default new Vuex.Store({
     addFile(state, payload) {
       state.files.push(payload);
     },
+    setImages(state, payload) {
+      state.images = payload
+    }
   },
+  // setImages(내가 임의로만든 이름)add와 set의 차이 add는 추가해주는거 set은 새로 만드는것?
   actions: {},
   modules: {}
 });
