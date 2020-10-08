@@ -9,6 +9,9 @@
     <v-toolbar-title>VUETIFY</v-toolbar-title>
     <router-link to="/" class="menu">Home</router-link>
     <router-link to="/gallery" class="menu">Gallery</router-link>
+    <router-link to="/gallery2" class="menu">Gallery Images</router-link>
+    <router-link to="/service" class="menu">Service</router-link>
+
     <!-- router-link - 서브메뉴 a태그 역할 하드코딩과 다르게 서브페이지로 넘어갈때, 
     빠르게 넘어감 하드코딩으로는 아예 새로고침하듯이 새페이지 열어서 가져오기에 속도가 늦게 열림-->
 
