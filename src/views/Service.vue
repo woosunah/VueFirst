@@ -52,9 +52,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.txt {
-  color: #f09f54;
-  font-weight: bold;
-  font-size: 25px;
-}
 </style>
