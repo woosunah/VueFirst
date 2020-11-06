@@ -16,21 +16,21 @@
 // (필요하든 안필요하든 무조건 불러와야함 / 동기적으로 불러오는것)
 
 export default {
-  name: "Main",
+  name: 'Main',
   components: {
-    MainBanner: () => import("@/components/main/MainBanner.vue"),
-    AboutMe: () => import("@/components/main/AboutMe.vue"),
-    Features: () => import("@/components/main/Features.vue"),
-    Parallax1: () => import("@/components/main/Parallax1.vue"),
-    Blog: () => import("@/components/main/Blog.vue"),
-    VuexEx: () => import("@/components/main/VuexEx.vue"),
-    ContactMe: () => import("@/components/main/ContactMe.vue")
+    MainBanner: () => import('@/components/main/MainBanner.vue'),
+    AboutMe: () => import('@/components/main/AboutMe.vue'),
+    Features: () => import('@/components/main/Features.vue'),
+    Parallax1: () => import('@/components/main/Parallax1.vue'),
+    Blog: () => import('@/components/main/Blog.vue'),
+    VuexEx: () => import('@/components/main/VuexEx.vue'),
+    ContactMe: () => import('@/components/main/ContactMe.vue'),
   },
 
   data() {
     return {};
   },
-  methods: {}
+  methods: {},
 };
 </script>
 
