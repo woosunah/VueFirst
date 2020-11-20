@@ -2,7 +2,7 @@
   <v-app-bar color="white">
     <v-avatar class="logo">
       <img :src="require('../../assets/logo.svg')" alt="John" />
-      <!-- require은 js파일을 불러오는것, import랑 비슷한 개념 -->
+      <!-- :src require은 js파일을 불러오는것, import랑 비슷한 개념 -->
       <!-- // /C:/Users/User/Document/portfolio/src/components/core/../../assets/logo.v-icon--svg
       // <img :src="require('../../assets/logo.svg')" alt="John" /위와 아래 경로가 같음-->
     </v-avatar>
@@ -22,18 +22,16 @@
   </v-app-bar>
 </template>
 
-
-
 <script>
 // @ is an alias to /src
 
 export default {
-  name: "AppBar",
+  name: 'AppBar',
   components: {},
   data() {
     return {};
   },
-  methods: {}
+  methods: {},
 };
 </script>
 

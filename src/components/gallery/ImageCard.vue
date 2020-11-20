@@ -31,10 +31,10 @@
 
 <script>
 export default {
-  props: ["url", "author"],
+  props: ['url', 'author'],
   data() {
     return {
-      isMouseOver: false
+      isMouseOver: false,
     };
   },
   methods: {
@@ -47,8 +47,8 @@ export default {
     mouseleave() {
       // console.log('mouse leave!!!',e.target)
       this.isMouseOver = false;
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -78,4 +78,3 @@ export default {
   opacity: 0;
 }
 </style>
-
